@@ -1,0 +1,23 @@
+{
+  "name": "JazzDrum",
+  "description": "JazzDrum app",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/icons/JazzDrum 16x16.png",
+    "48": "/icons/JazzDrum 48x48.png",
+    "60": "/icons/JazzDrum 60x60.png",
+    "128": "/icons/JazzDrum 128x128.png"
+  },
+  "developer": {
+    "name": "Nick",
+    "url": "https://github.com/nickyeh97"
+  },
+  "permissions": {
+  "audio-channel-normal" : {
+    "description" : "Needed to play this app's audio content on the normal channel"
+  },
+  "audio-channel-content" : {
+    "description" : "Needed to play this app's audio content on the content channel"
+  }
+  }
+}
