@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
 
-    <title>Hello World</title>
+    <title>My Drum</title>
 
 
     <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
          so we use a script file. -->
     <script src="app.js" defer></script>
+    <script src="Qunit.js"></script>
+    <script src="tests.js"></script>
 
 </head>
 
@@ -18,7 +20,7 @@
         <map name="drum_map">
         <!--Hi hat-->
             <area shape="poly" coords="5,154,30,138,45,133,70,128,120,132,125,147,115,154,95,160,70,166,30,170,6,162"
-                  onclick="playSound('Hi hat.wav')" />
+                  onclick="playSound('Hi hat.mp3')" />
         <!--Cymbal-1-->
             <area shape="poly" coords="85,54,85,64,100,74,120,78,145,78,170,70,190,58,193,44,176,33,160,30,126,30,108,36,92,45"
                   onclick="playSound('Crash-Cymbal-1.wav')"  />
@@ -36,7 +38,7 @@
                   onclick="playSound('Hi Tom.wav')" onmousedown="mouseDown('Hi-Drums.jpg')" onmouseup="mouseUp()" />
         <!--Med Tom-->
             <area shape="poly" coords="320,102,348,105,365,121,355,142,331,152,303,153,286,148,275,136,275,122,285,110,304,100"
-                  onclick="playSound('Med Tom.wav')" onmousedown="mouseDown('Med-Drums.jpg')" onmouseup="mouseUp()" />
+                  onclick="playSound('Med Tom.mp3')" onmousedown="mouseDown('Med-Drums.jpg')" onmouseup="mouseUp()" />
         <!--Low Tom-->
             <area shape="circle" coords="376,220,45"
                   onclick="playSound('Low Tom.wav')" onmousedown="mouseDown('Low-Drums.jpg')" onmouseup="mouseUp()" />
